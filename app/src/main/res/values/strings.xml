@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ingetin</string>
+
+    <string name="mn_delete">Delete</string>
+    <string name="mn_modify">Modify</string>
+    <string name="select_for">Select Action for</string>
+</resources>
