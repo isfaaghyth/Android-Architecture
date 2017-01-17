@@ -12,4 +12,8 @@ TODO:
 - [ ] User Interface
 - [ ] Note for (Image and free drawing)
 
+Library:
+- [a link](https://github.com/realm/realm-java)
+- [a link](https://github.com/orfjackal/retrolambda)
+
 enjoy!
