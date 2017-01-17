@@ -5,7 +5,11 @@ My plan, I wanna create Note-App, but not yet completed. next, I will be updatin
 
 TODO:
 
-- [ ] Insert data
+- [x] Insert data
+- [x] Show data
 - [ ] Delete data
+- [ ] Update data
+- [ ] User Interface
+- [ ] Note for (Image and free drawing)
 
 enjoy!
