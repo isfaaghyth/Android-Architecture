@@ -24,7 +24,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
 
     Context context;
     List<DataItemModel> dataItems;
-    ClickedListener clickedListener;
+    final ClickedListener clickedListener;
 
     public ItemAdapter(Context context, ClickedListener clickedListener, List<DataItemModel> dataItems) {
         this.clickedListener = clickedListener;
@@ -41,7 +41,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
     public void onBindViewHolder(ItemHolder holder, final int position) {
         holder.txtName.setText(dataItems.get(position).getName());
         holder.txtId.setText(String.valueOf(dataItems.get(position).getId()));
-        holder.cardItem.setOnClickListener(view -> clickedListener.clicked(dataItems.get(position).getId()));
+        holder.cardItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickedListener.clicked(dataItems.get(position).getId());
+            }
+        });
     }
 
     @Override
