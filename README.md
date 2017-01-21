@@ -1,5 +1,5 @@
 # Ingetin (Note-App)
-## MVP, with Realm and Lambda Implementation.
+## MVP architecture and Realm.
 
 My plan, I wanna create Note-App, but not yet completed. next, I will be updating in a new branch.
 
@@ -14,6 +14,5 @@ TODO:
 
 Library:
 - [Realm Java](https://github.com/realm/realm-java)
-- [Retrolambda](https://github.com/orfjackal/retrolambda)
 
 enjoy!
