@@ -50,6 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void initialize() {
         lstItem.setLayoutManager(new LinearLayoutManager(this));
-        lstItem.setAdapter(new ItemAdapter(this, new ItemClicked(this), presenter.showData()));
+        lstItem.setAdapter(new ItemAdapter(this, clickedListener, presenter.showData()));
     }
 }
