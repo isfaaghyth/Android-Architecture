@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView lstItem;
 
     private DataListener presenter;
-    private ClickedListener clickedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         presenter = new DataProcesses(getApplicationContext());
-        clickedListener = new ItemClicked(this);
         initialize();
     }
 
